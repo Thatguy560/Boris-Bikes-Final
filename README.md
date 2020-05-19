@@ -48,7 +48,7 @@ This project emulates London's Boris Bikes. It implements the following user sto
 - As a maintainer of the system,
   So that I can manage broken bikes and not disappoint users,
   I'd like docking stations to accept returning bikes (broken or not).
-  (Not Done Yet ✗)
+  (Done ✓)
 
 - As a maintainer of the system,
   So that I can manage broken bikes and not disappoint users,

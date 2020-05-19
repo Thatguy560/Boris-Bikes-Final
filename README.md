@@ -1,8 +1,14 @@
 # Boris Bikes 
 
+**Requirements**
+
+Taken from https://github.com/makersacademy/course/tree/master/boris_bikes
+
+This is a re-do of the first weeks challenge at Makers Academy
+
 This project emulates London's Boris Bikes. It implements the following user stories:
 
-## User Stories
+# User Stories
 
 - As a person,
   So that I can use a bike,
@@ -54,3 +60,43 @@ This project emulates London's Boris Bikes. It implements the following user sto
   So that I can manage broken bikes and not disappoint users,
   I'd like vans to take broken bikes from docking stations and deliver them to garages to be fixed.
   (Not Done Yet ✗)
+
+# Running the program in irb and example usage
+
+$ git clone https://github.com/Thatguy560/Boris-Bikes-Final.git
+  
+$ cd Boris-Bikes-Final
+
+$ type irb in the terminal 
+
+$ require './lib/docking_station.rb'
+
+$ Create a new docking station (and as bonus, you can specify it's max capactiy) by typing in dockingstation = DockingStation.new(40). Otherwise just type in dockingstation = DockingStation.new and it will default to it's regular capacity of 20. 
+
+$ Create some new bikes using bike1 = Bike.new, bike2 = Bike.new, bike3 = Bike.new
+
+$ you can report the status of these bikes from working (@working=true) to broken (@working=false) by typing in bike1.report_broken for example.
+
+$ You can dock a bike using dockingstation.dock(bike1) or if you wanted to dock the 2nd bike for instance dockingstation.dock(bike2)
+
+$ If you want to release a bike, type in dockingstation.release_bike
+
+**Some personal methods I've added** 
+
+$ If you want to count the number of bikes in the docking station type in dockingstation.bikes_available 
+
+$ If you want to see a list of bikes that are docked type in dockingstation.view_available_bikes
+
+# Testing the program
+
+$ bundle install 
+
+$ rspec
+
+Test Coverage:  100.00% -- 74/74 lines in 4 files
+  
+## Testing Frameworks Used: 
+  
+ Rubocop, Simplecov, RSpec
+
+

@@ -10,9 +10,9 @@ This project emulates London's Boris Bikes. It implements the following user sto
 
 # User Stories
 
-- As a person,
-  So that I can use a bike,
-  I'd like a docking station to release a bike. (Done ✓)
+> As a person,
+> So that I can use a bike,
+> I'd like a docking station to release a bike. (Done ✓)
 
 - As a person,
   So that I can use a good bike,
